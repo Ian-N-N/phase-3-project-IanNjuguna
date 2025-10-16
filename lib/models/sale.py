@@ -21,3 +21,4 @@ class Sale:
                        (self.product_id, self.quantity, self.sale_date))
         product.update_stock(-self.quantity)
         CONN.commit()
+        
