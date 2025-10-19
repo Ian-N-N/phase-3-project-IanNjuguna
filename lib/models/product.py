@@ -1,6 +1,6 @@
 from lib.database import CONN, cursor
 
-class product:
+class Product:
     def __init__(self, name, price, stock=0, supplier_id=None, id=None):
         self.id = id
         self.name = name
