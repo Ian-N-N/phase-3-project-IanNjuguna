@@ -13,7 +13,7 @@ class Sale:
         conn = get_connection()
         cursor = conn.cursor()
 
-        # ✅ Validate product exists and has enough stock
+        # Validate product exists and has enough stock
         cursor.execute("SELECT stock FROM products WHERE id = ?", (self.product_id,))
         row = cursor.fetchone()
         if not row:
@@ -23,14 +23,14 @@ class Sale:
             conn.close()
             raise ValueError("Insufficient stock available.")
 
-        # ✅ Record sale with current date (YYYY-MM-DD format)
+        #  Record sale with current date (YYYY-MM-DD format)
         sale_date = datetime.now().strftime("%Y-%m-%d")
         cursor.execute(
             "INSERT INTO sales (product_id, quantity, date) VALUES (?, ?, ?)",
             (self.product_id, self.quantity, sale_date)
         )
 
-        # ✅ Update stock after sale
+        #  Update stock after sale
         cursor.execute(
             "UPDATE products SET stock = stock - ? WHERE id = ?",
             (self.quantity, self.product_id)
