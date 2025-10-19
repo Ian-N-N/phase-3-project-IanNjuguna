@@ -1,7 +1,7 @@
 # sales, recording and reporting
 from lib.database import CONN, cursor
 from datetime import datetime
-from lib.models.product import product
+from lib.models.product import Product
 
 class Sale:
     def __init__(self, product_id, quantity, sale_date=None, id=None):

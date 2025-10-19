@@ -11,7 +11,7 @@ def create_tables():
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     name TEXT NOT NULL,
                     price REAL NOT NULL,
-                    stock INTEGER NOT NULL,DEFAULT 0,
+                    stock INTEGER DEFAULT 0,
                     supplier_id INTEGER,
                     FOREIGN KEY (supplier_id) REFERENCES suppliers(id))""") 
     cursor.execute("""CREATE TABLE IF NOT EXISTS sales (
