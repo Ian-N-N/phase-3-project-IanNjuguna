@@ -1,10 +1,8 @@
-from lib.database import create_tables
+from lib.database import initialize_database
 from lib.cli import main_menu
 
 if __name__ == "__main__":
-    # Initialize the database and tables
-    create_tables()
-    print(" Database initialized successfully!")
-
-    # Start the CLI
+    initialize_database()
+    print(" Welcome to Tech Store Management System")
+    print("Use the commands below to manage suppliers, products, and sales.\n")
     main_menu()
