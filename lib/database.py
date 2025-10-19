@@ -2,7 +2,7 @@ import sqlite3
 CONN = sqlite3.connect('db/database.db')
 cursor = CONN.cursor()
 """create a table in the database if it does not exist"""
-def create_table():
+def create_tables():
     cursor.execute("""CREATE TABLE IF NOT EXISTS suppliers (
                    id INTEGER PRIMARY KEY AUTOINCREMENT, 
                    name TEXT NOT NULL,
