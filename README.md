@@ -65,6 +65,6 @@ python main.py monthly-report
 Each command asks you for input interactively e.g, product name
 
 ## Author
-Ian Ngoru Njuguna
+Ian Ngoru Njuguna<br>
 Phase 3 python project | TECH STORE STOCK AND SALES MANAGEMENT SYSTEM
 
