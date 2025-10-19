@@ -15,6 +15,7 @@ This is a command-line application for managing, suppliers, products and sales. 
 4. WSL(ubuntu)
 
 ## Project Structure
+```bash
 phase-3-project-IanNjuguna/
 │
 ├── lib/
@@ -29,7 +30,7 @@ phase-3-project-IanNjuguna/
 ├── main.py                    # Entry point for the CLI app
 ├── requirements.txt           # Project dependencies
 └── README.md                  # Project documentation
-
+```
 ## Installation and Set-up
 ### Clone the repository
 ```bash
