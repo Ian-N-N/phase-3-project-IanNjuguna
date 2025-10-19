@@ -19,17 +19,17 @@ This is a command-line application for managing, suppliers, products and sales. 
 phase-3-project-IanNjuguna/
 │
 ├── lib/
-│   ├── cli.py                 # Main CLI menu and commands
-│   ├── database.py            # SQLite connection and setup
-│   ├── helpers.py             # Helper utilities (e.g., print_table)
+│   ├── cli.py                 
+│   ├── database.py            
+│   ├── helpers.py             
 │   └── models/
-│       ├── supplier.py        # Supplier model
-│       ├── product.py         # Product model
-│       └── sale.py            # Sale model
+│       ├── supplier.py        
+│       ├── product.py         
+│       └── sale.py            
 │
-├── main.py                    # Entry point for the CLI app
-├── requirements.txt           # Project dependencies
-└── README.md                  # Project documentation
+├── main.py                    
+├── requirements.txt           
+└── README.md                  
 ```
 ## Installation and Set-up
 ### Clone the repository
